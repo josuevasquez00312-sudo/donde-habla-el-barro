@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#5b301d">
+<meta name="description" content="Donde Habla el Barro — experiencia cultural participativa y comunitaria en La Arada, Goascorán, Valle, Honduras.">
+<title>Donde Habla el Barro | La Arada, Goascorán</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{
+ --brown:#5b301d; --clay:#a95d38; --sand:#e9d5bd; --cream:#f8f1e7;
+ --ink:#241b16; --gold:#c5964b; --green:#465344; --white:#fffdf9;
+ --shadow:0 18px 55px rgba(50,31,20,.13); --radius:26px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.02;margin:0}
+h2{font-size:clamp(2.2rem,5vw,4.2rem);color:var(--brown)}
+p{margin:0 0 1rem}.container{width:min(1160px,92%);margin:auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(35,24,18,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.12)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{color:white;text-decoration:none;font-family:"Cormorant Garamond";font-size:1.6rem;font-weight:700}
+.brand span{display:block;font:500 .65rem "DM Sans";letter-spacing:.18em;text-transform:uppercase;color:#e8c998}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:.86rem;font-weight:600;opacity:.9}
+nav a:hover{color:#f1ca8c}.hero{min-height:92vh;position:relative;display:grid;place-items:center;overflow:hidden;color:white;background:linear-gradient(90deg,rgba(35,20,12,.88),rgba(35,20,12,.48),rgba(35,20,12,.2)),url('assets/galeria-1.png') center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,var(--cream))}
+.hero-content{position:relative;z-index:2;padding-top:70px}.eyebrow{text-transform:uppercase;letter-spacing:.24em;font-size:.78rem;font-weight:700;color:#e8c998;margin-bottom:20px}
+.hero h1{font-size:clamp(4rem,9vw,8rem);max-width:850px}.hero .lead{font-family:"Cormorant Garamond";font-size:clamp(1.35rem,2.7vw,2rem);max-width:680px;margin:24px 0 32px;color:#fff8ef}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:700;transition:.25s}
+.btn-primary{background:#e2b66f;color:#3b2417}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px #0003}
+.btn-ghost{border:1px solid #ffffff80;color:#fff;margin-left:8px}.btn-ghost:hover{background:#fff1;color:white}
+.section{padding:105px 0}.section.alt{background:#fffaf4}
+.kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.2em;color:var(--clay);font-weight:800;margin-bottom:12px}
+.intro{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center}
+.intro p{font-size:1.08rem;color:#5b514b}.quote{border-left:3px solid var(--gold);padding:16px 0 16px 24px;font-family:"Cormorant Garamond";font-size:1.8rem;color:var(--brown)}
+.photo-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}.photo-card img{display:block;width:100%;height:520px;object-fit:cover}
+.photo-card .caption{position:absolute;left:20px;bottom:20px;background:#fffdf9e8;padding:10px 15px;border-radius:14px;font-size:.8rem;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:45px}
+.card{background:white;padding:25px 20px;border-radius:20px;box-shadow:0 8px 28px #3d24150d;border:1px solid #eadccc}
+.card .icon{font-size:2rem;margin-bottom:12px}.card h3{font-size:1.55rem;color:var(--brown);margin-bottom:7px}.card p{font-size:.88rem;color:#655a52}
+.experience{display:grid;grid-template-columns:1fr 1.05fr;gap:55px;align-items:start}.steps{display:grid;gap:14px;margin-top:30px}
+.step{display:grid;grid-template-columns:50px 1fr;gap:15px;background:white;padding:18px;border-radius:18px;box-shadow:0 6px 24px #3d24150d}
+.num{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--brown);color:white;font-weight:800}.step h3{font-size:1.4rem;color:var(--brown)}
+.video-wrap{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);background:#1f1713}.video-wrap video{display:block;width:100%;max-height:620px}.video-note{padding:15px 20px;color:#f2dfca;font-size:.85rem}
+.process{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:45px}.process article{min-height:260px;border-radius:22px;overflow:hidden;position:relative;background:#ddd}.process img{width:100%;height:100%;object-fit:cover}.process article:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#21150dcc)}.process .label{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:white}.label h3{font-size:1.6rem}.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:230px;gap:14px;margin-top:42px}.gallery img{width:100%;height:100%;object-fit:cover;border-radius:20px}.gallery img:first-child{grid-row:span 2}
+.impact{background:var(--brown);color:white}.impact h2{color:white}.impact-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:42px}.impact-item{border:1px solid #ffffff2b;padding:22px;border-radius:20px;background:#ffffff08}.impact-item strong{display:block;font-family:"Cormorant Garamond";font-size:1.7rem;color:#e9c58e}
+.info-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin-top:45px}.info-card{background:white;border-radius:24px;padding:32px;box-shadow:0 8px 30px #3d24150d}.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fact{background:var(--cream);padding:18px;border-radius:16px}.fact b{display:block;color:var(--brown);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}.map{width:100%;height:100%;min-height:380px;object-fit:cover;border-radius:20px}
+.cta{background:linear-gradient(135deg,#6b3a24,#3f261b);color:white;text-align:center;padding:100px 20px}.cta h2{color:white;font-size:clamp(3rem,7vw,5.5rem)}.cta p{max-width:650px;margin:20px auto 30px;font-size:1.08rem;color:#f3e5d7}
+footer{background:#201611;color:#d8c7b7;padding:45px 0}.foot{display:flex;justify-content:space-between;gap:30px;align-items:center}.foot strong{color:white;font-family:"Cormorant Garamond";font-size:1.8rem}.small{font-size:.82rem;color:#a99584}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){nav a{display:none}.intro,.experience,.info-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.impact-grid{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gallery img:first-child{grid-row:span 1}.photo-card img{height:400px}}
+@media(max-width:600px){.section{padding:72px 0}.hero{min-height:90vh}.hero h1{font-size:4rem}.btn{width:100%;justify-content:center}.btn-ghost{margin:10px 0 0}.cards,.process,.impact-grid,.facts,.gallery{grid-template-columns:1fr}.navin{height:62px}.gallery{grid-auto-rows:230px}.foot{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="container navin">
+<a class="brand" href="#inicio">Donde Habla el Barro<span>La Arada · Goascorán · Valle</span></a>
+<nav><a href="#experiencia">Experiencia</a><a href="#proceso">El proceso</a><a href="#galeria">Galería</a><a href="#visita">Visita</a></nav>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="container hero-content">
+<div class="eyebrow">Turismo cultural participativo y comunitario</div>
+<h1>Donde Habla el Barro</h1>
+<p class="lead">Moldea una historia, descubre una cultura.</p>
+<p style="max-width:650px">Ven a La Arada, conoce a las artesanas, descubre cómo el barro se transforma y pon tus propias manos en esta historia.</p>
+<div style="margin-top:30px"><a class="btn btn-primary" href="#experiencia">Vivir la experiencia ↓</a><a class="btn btn-ghost" href="#visita">Planifica tu visita</a></div>
+</div></section>
+
+<section class="section"><div class="container intro reveal">
+<div><div class="kicker">Una experiencia que se moldea con las manos</div>
+<h2>Aquí no vienes solamente a mirar.</h2>
+<p style="margin-top:22px">Vienes a conocer las manos que crean, los conocimientos que hacen posible la transformación del barro y las historias que acompañan este oficio en La Arada.</p>
+<p>La experiencia combina encuentro con las artesanas, demostración, participación práctica, exhibición de piezas y un cierre para reflexionar sobre el valor de conservar estos conocimientos.</p>
+<div class="quote">“Cada pieza de barro representa una parte de la memoria cultural de La Arada.”</div>
+</div>
+<div class="photo-card"><img src="assets/artesana-1.jpg" alt="Artesana trabajando una pieza de barro"><div class="caption">Conoce a quienes mantienen vivo el oficio</div></div>
+</div></section>
+
+<section class="section alt" id="experiencia"><div class="container">
+<div class="kicker">¿Qué vivirás?</div><h2>Conoce · Encuentra · Moldea · Descubre · Valora</h2>
+<div class="cards reveal">
+<article class="card"><div class="icon">🤝</div><h3>Conoce</h3><p>Descubre La Arada y acércate a la actividad alfarera directamente desde la comunidad.</p></article>
+<article class="card"><div class="icon">👩‍🎨</div><h3>Encuentra</h3><p>Comparte con las artesanas, escucha sus historias y conoce cómo aprendieron el oficio.</p></article>
+<article class="card"><div class="icon">👐</div><h3>Moldea</h3><p>Trabaja el barro y crea una figura sencilla bajo la orientación de una artesana.</p></article>
+<article class="card"><div class="icon">🔥</div><h3>Descubre</h3><p>Comprende las diferentes etapas que atraviesa una pieza artesanal.</p></article>
+<article class="card"><div class="icon">🛍️</div><h3>Valora</h3><p>Conoce las piezas disponibles y, si deseas, compra directamente a sus creadoras.</p></article>
+</div></div></section>
+
+<section class="section"><div class="container experience">
+<div class="reveal"><div class="kicker">Ruta Donde Habla el Barro</div><h2>3 horas y 30 minutos para llevarte una historia.</h2>
+<p style="margin-top:20px">Grupo recomendado: 4 a 8 visitantes. La experiencia se desarrolla en la comunidad de La Arada, Goascorán, Valle.</p>
+<div class="steps">
+<div class="step"><div class="num">1</div><div><h3>Bienvenida</h3><p>Introducción sobre Goascorán, La Arada y el propósito de la experiencia.</p></div></div>
+<div class="step"><div class="num">2</div><div><h3>Encuentro con las artesanas</h3><p>Historias, aprendizaje y conversación con quienes practican la actividad.</p></div></div>
+<div class="step"><div class="num">3</div><div><h3>Demostración</h3><p>Preparación, acondicionamiento, moldeado, formación y explicación de la decoración.</p></div></div>
+<div class="step"><div class="num">4</div><div><h3>“Moldea tu propia historia”</h3><p>Actividad central: crea tu propia pieza con barro y acompañamiento artesanal.</p></div></div>
+<div class="step"><div class="num">5</div><div><h3>Exhibición y cierre</h3><p>Conoce las piezas, compra directamente si deseas y participa en una reflexión final.</p></div></div>
+</div></div>
+<div class="video-wrap reveal"><video controls playsinline poster="assets/video-poster.jpg"><source src="assets/experiencia.mp4" type="video/mp4">Tu navegador no puede reproducir este video.</video><div class="video-note">🎥 Conoce un vistazo de la experiencia antes de visitarnos.</div></div>
+</div></section>
+
+<section class="section alt" id="proceso"><div class="container">
+<div class="kicker">Del barro a la historia</div><h2>Cada etapa necesita tiempo.</h2>
+<p style="max-width:720px;margin-top:18px">Durante la visita conocerás diferentes momentos del trabajo artesanal. Algunas etapas se observan directamente y otras se explican mediante piezas previamente preparadas.</p>
+<div class="process reveal">
+<article><img src="assets/barro-proceso.png" alt="Preparación del barro"><div class="label"><h3>Preparación</h3><p>El barro comienza su transformación.</p></div></article>
+<article><img src="assets/taller.png" alt="Trabajo artesanal"><div class="label"><h3>Moldeado</h3><p>Las manos dan forma al material.</p></div></article>
+<article><img src="assets/piezas.png" alt="Piezas de barro"><div class="label"><h3>Secado</h3><p>La pieza necesita tiempo.</p></div></article>
+<article><img src="assets/alfareria-lenca.png" alt="Alfarería"><div class="label"><h3>Decoración</h3><p>Conocimientos y creatividad.</p></div></article>
+<article><img src="assets/horno-artesanal.png" alt="Horno artesanal"><div class="label"><h3>Cocción</h3><p>El fuego completa el proceso.</p></div></article>
+</div></div></section>
+
+<section class="section" id="galeria"><div class="container">
+<div class="kicker">Una mirada a La Arada</div><h2>Conoce antes de llegar.</h2>
+<div class="gallery reveal">
+<img src="assets/galeria-1.png" alt="Colección de piezas artesanales">
+<img src="assets/artesana-1.jpg" alt="Artesana con una pieza">
+<img src="assets/taller.png" alt="Taller de artesanía">
+<img src="assets/piezas.png" alt="Piezas de barro">
+<img src="assets/alfareria-lenca.png" alt="Referencia de alfarería">
+</div></div></section>
+
+<section class="section impact"><div class="container">
+<div class="kicker" style="color:#e5bc7e">Más que una visita</div><h2>Tu experiencia también deja huella.</h2>
+<p style="max-width:700px;margin-top:20px;color:#eaded2">Participar en Donde Habla el Barro contribuye a fortalecer la actividad de las personas que hacen posible la experiencia.</p>
+<div class="impact-grid reveal">
+<div class="impact-item"><strong>Valorar</strong>El trabajo de las artesanas.</div>
+<div class="impact-item"><strong>Fortalecer</strong>La actividad económica de la comunidad.</div>
+<div class="impact-item"><strong>Motivar</strong>La participación de nuevas generaciones.</div>
+<div class="impact-item"><strong>Apoyar</strong>La comercialización directa.</div>
+<div class="impact-item"><strong>Conservar</strong>Conocimientos y prácticas culturales.</div>
+</div></div></section>
+
+<section class="section" id="visita"><div class="container">
+<div class="kicker">Planifica tu visita</div><h2>¿Listo para moldear tu propia historia?</h2>
+<div class="info-grid reveal">
+<div class="info-card"><div class="facts">
+<div class="fact"><b>📍 Lugar</b>La Arada, Goascorán, Valle</div>
+<div class="fact"><b>⏱️ Duración</b>3 horas y 30 minutos</div>
+<div class="fact"><b>👥 Grupo</b>4 a 8 visitantes</div>
+<div class="fact"><b>📅 Horario</b>Miércoles a domingo · 7:00 a.m. – 5:00 p.m.</div>
+<div class="fact"><b>💰 Precio</b>L 5,000.00</div>
+<div class="fact"><b>📱 WhatsApp</b>+504 8891-1186</div>
+</div>
+<p class="small" style="margin-top:20px">La propuesta indica reservar anticipadamente. El precio mostrado corresponde al valor consignado en el documento del producto turístico.</p>
+<a class="btn btn-primary" style="margin-top:10px" href="https://wa.me/50488911186?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20experiencia%20Donde%20Habla%20el%20Barro." target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
+</div>
+<div class="info-card"><img class="map" src="assets/mapa.jpg" alt="Mapa de la ruta Donde Habla el Barro"></div>
+</div></div></section>
+
+<section class="cta"><div class="container">
+<div class="eyebrow">La Arada · Goascorán · Valle · Honduras</div>
+<h2>Ven a conocer el barro.<br>Conoce a quienes lo transforman.</h2>
+<p>Moldea con tus propias manos. Descubre una cultura. Y llévate contigo una historia de La Arada.</p>
+<a class="btn btn-primary" href="https://wa.me/50488911186?text=Hola%2C%20quiero%20reservar%20Donde%20Habla%20el%20Barro." target="_blank" rel="noopener">Reservar mi experiencia →</a>
+</div></section>
+</main>
+
+<footer><div class="container foot"><div><strong>Donde Habla el Barro</strong><div class="small">“Moldea una historia, descubre una cultura.”</div></div><div class="small">Producto turístico cultural · La Arada, Goascorán, Valle</div></div></footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
